@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Boxes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <h1>YAY! It's BOGO</h1>
+    <form id="boxForm">
+      
+     <!-- BOX 1 -->
+<div class="box" data-index="1">
+  <div class="box-header">
+    <input type="radio" name="unit" value="1" class="radio-btn" />
+    <span class="unit-label">1 Unit</span>
+    <span class="badge">10% Off</span>
+  </div>
+  <div>
+    <span class="price">$10.00 USD <del>$24.00 USD</del></span>
+  </div>
+  <div class="options">
+    <div class="option-block">
+      <label class="option-label">Size</label>
+      <select class="size-select">
+        <option value="S" selected>Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+    </div>
+    <div class="option-block">
+      <label class="option-label">Color</label>
+      <select class="color-select">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- BOX 2 (Popular Tag Added) -->
+<div class="box popular" data-index="2">
+  <span class="tag">Most Popular</span>
+  <div class="box-header">
+    <input type="radio" name="unit" value="2" class="radio-btn" />
+    <span class="unit-label">2 Unit</span>
+    <span class="badge">20% Off</span>
+  </div>
+  <div>
+    <span class="price">$18.00 USD <del>$24.00 USD</del></span>
+  </div>
+  <div class="options">
+    <div class="option-block">
+      <label class="option-label">Size</label>
+      <select class="size-select">
+        <option value="S" selected>Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+    </div>
+    <div class="option-block">
+      <label class="option-label">Color</label>
+      <select class="color-select">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- BOX 3 -->
+<div class="box" data-index="3">
+  <div class="box-header">
+    <input type="radio" name="unit" value="3" class="radio-btn" />
+    <span class="unit-label">3 Unit</span>
+    <span class="badge">30% Off</span>
+  </div>
+  <div>
+    <span class="price">$24.00 USD <del>$36.00 USD</del></span>
+  </div>
+  <div class="options">
+    <div class="option-block">
+      <label class="option-label">Size</label>
+      <select class="size-select">
+        <option value="S" selected>Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+    </div>
+    <div class="option-block">
+      <label class="option-label">Color</label>
+      <select class="color-select">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+      <div class="summary">
+        <p class="delivery">Free Delivery</p>
+        <p class="total">Total: <strong id="totalPrice">$10.00 USD</strong></p>
+      </div>
+      <button type="submit" class="btn">+ Add to Cart</button>
+    </form>
+    
+    <p class="powered">© Powered by Ranil</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
